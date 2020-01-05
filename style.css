@@ -7,7 +7,7 @@
 html {
   width: 100%;
   height: 100%;
-  background: white;
+  background: #33c573;
 }
 
 html:before {
@@ -17,7 +17,7 @@ html:before {
   left: 0px;
   width: 100%;
   height: 100%;
-  background: white;
+  background: #33c573;
   z-index: -1;
 }
 
