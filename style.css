@@ -11,7 +11,7 @@ html {
 }
 
 html#eip {
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 body {
@@ -24,45 +24,14 @@ body {
 }
 
 .eip {
-  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
+  animation: eip 10s linear infinite;
 }
 
-@keyframes inline {
-  0% {top: -5vw}
-  100% {top: 5vw}
-}
-
-@keyframes regular {
-  0% {left: -5vw}
-  100% {left: 5vw}
-}
-
-@keyframes outline {
-  0% {top: 5vw}
-  100% {top: -5vw}
-}
-
-@keyframes shade {
-  0% {left: 5vw}
-  100% {left: -5vw}
-}
-
-#inline {
-  animation: inline 1s linear infinite alternate;
-}
-
-#regular {
-  animation: regular 1s linear infinite alternate;
-}
-
-#outline {
-  animation: outline 1s linear infinite alternate;
-}
-
-#shade {
-  animation: shade 1s linear infinite alternate;
+@keyframes eip {
+  0% {transform: translateX(100%)}
+  100% {transform: translateX(-100%)}
 }
