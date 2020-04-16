@@ -24,14 +24,16 @@ body {
 }
 
 .eip {
+  width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  transform: translateX(100%);
   animation: eip 10s linear infinite;
 }
 
 @keyframes eip {
-  0% {transform: translateX(100%)}
+  0% {0}
   100% {transform: translateX(-100%)}
 }
