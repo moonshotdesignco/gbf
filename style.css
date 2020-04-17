@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -10,13 +11,17 @@ html {
   background: #33c573;
 }
 
-html#eip {
+html#ofh {
   overflow: hidden;
 }
 
 body {
   width: 100%;
   -webkit-text-size-adjust: 100%;
+}
+
+body#h {
+  height: 100%;
 }
 
 .logo {
@@ -29,11 +34,142 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(100%);
-  animation: eip 10s linear infinite;
+  -webkit-animation: eip 10s linear infinite;
+          animation: eip 10s linear infinite;
+}
+
+@-webkit-keyframes eip {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 
 @keyframes eip {
-  0% {0}
-  100% {transform: translateX(-100%)}
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+.sssh {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (orientation: portrait) {
+  .sssh {
+    width: 90%;
+  }
+}
+
+#stay {
+  bottom: 51%;
+}
+
+#safe {
+  top: 51%;
+  -webkit-animation: safe 4s linear infinite;
+          animation: safe 4s linear infinite;
+}
+
+#home {
+  top: 51%;
+  -webkit-animation: home 4s linear infinite;
+          animation: home 4s linear infinite;
+}
+
+@-webkit-keyframes safe {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: 1;
+  }
+  37.5% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes safe {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  12.5% {
+    opacity: 1;
+  }
+  37.5% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes home {
+  0% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 0;
+  }
+  62.5% {
+    opacity: 1;
+  }
+  87.5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes home {
+  0% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 0;
+  }
+  62.5% {
+    opacity: 1;
+  }
+  87.5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }

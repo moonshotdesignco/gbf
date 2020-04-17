@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background: #33c573;
+}
+
+html#ofh {
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body#h {
+  height: 100%;
+}
+
+.logo {
+  width: 100%;
+}
+
+.eip {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: eip 10s linear infinite;
+}
+
+@keyframes eip {
+  0% {transform: translateX(100%)}
+  100% {transform: translateX(-100%)}
+}
+
+.sssh {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (orientation: portrait) {
+  .sssh {
+    width: 90%;
+  }
+}
+
+#stay {
+  bottom: 51%;
+}
+
+#safe {
+  top: 51%;
+  animation: safe 4s linear infinite;
+}
+
+#home {
+  top: 51%;
+  animation: home 4s linear infinite;
+}
+
+@keyframes safe {
+  0% {opacity: 0}
+  5% {opacity: 0}
+  12.5% {opacity: 1}
+  37.5% {opacity: 1}
+  45% {opacity: 0}
+  100% {opacity: 0}
+}
+
+@keyframes home {
+  0% {opacity: 0}
+  55% {opacity: 0}
+  62.5% {opacity: 1}
+  87.5% {opacity: 1}
+  95% {opacity: 0}
+  100% {opacity: 0}
+}
