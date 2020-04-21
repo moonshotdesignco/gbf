@@ -19,10 +19,6 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-body#h {
-  height: 100%;
-}
-
 .logo {
   width: 100%;
 }
@@ -43,7 +39,7 @@ body#h {
 
 .sssh {
   width: 50%;
-  position: absolute;
+  position: fixed;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -69,19 +65,17 @@ body#h {
 }
 
 @keyframes safe {
-  0% {opacity: 0}
-  5% {opacity: 0}
-  12.5% {opacity: 1}
-  37.5% {opacity: 1}
-  45% {opacity: 0}
-  100% {opacity: 0}
+  0% {transform: translateX(-50%); opacity: 1;}
+  25% {transform: translateX(-50%); opacity: 1;}
+  50% {transform: translateX(-150%); opacity: 0;}
+  75% {transform: translateX(-150%); opacity: 0;}
+  100% {transform: translateX(-50%); opacity: 1;}
 }
 
 @keyframes home {
-  0% {opacity: 0}
-  55% {opacity: 0}
-  62.5% {opacity: 1}
-  87.5% {opacity: 1}
-  95% {opacity: 0}
-  100% {opacity: 0}
+  0% {transform: translateX(50%); opacity: 0;}
+  25% {transform: translateX(50%); opacity: 0;}
+  50% {transform: translateX(-50%); opacity: 1;}
+  75% {transform: translateX(-50%); opacity: 1;}
+  100% {transform: translateX(50%); opacity: 0;}
 }
