@@ -76,14 +76,14 @@ body {
 
 #safe {
   top: 51%;
-  -webkit-animation: safe 4s linear infinite;
-          animation: safe 4s linear infinite;
+  -webkit-animation: safe 3s linear infinite;
+          animation: safe 3s linear infinite;
 }
 
 #home {
   top: 51%;
-  -webkit-animation: home 4s linear infinite;
-          animation: home 4s linear infinite;
+  -webkit-animation: home 3s linear infinite;
+          animation: home 3s linear infinite;
 }
 
 @-webkit-keyframes safe {
@@ -92,7 +92,7 @@ body {
             transform: translateX(-50%);
     opacity: 1;
   }
-  25% {
+  40% {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     opacity: 1;
@@ -102,7 +102,7 @@ body {
             transform: translateX(-150%);
     opacity: 0;
   }
-  75% {
+  90% {
     -webkit-transform: translateX(-150%);
             transform: translateX(-150%);
     opacity: 0;
@@ -120,7 +120,7 @@ body {
             transform: translateX(-50%);
     opacity: 1;
   }
-  25% {
+  40% {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     opacity: 1;
@@ -130,7 +130,7 @@ body {
             transform: translateX(-150%);
     opacity: 0;
   }
-  75% {
+  90% {
     -webkit-transform: translateX(-150%);
             transform: translateX(-150%);
     opacity: 0;
@@ -148,7 +148,7 @@ body {
             transform: translateX(50%);
     opacity: 0;
   }
-  25% {
+  40% {
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
     opacity: 0;
@@ -158,7 +158,7 @@ body {
             transform: translateX(-50%);
     opacity: 1;
   }
-  75% {
+  90% {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     opacity: 1;
@@ -176,7 +176,7 @@ body {
             transform: translateX(50%);
     opacity: 0;
   }
-  25% {
+  40% {
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
     opacity: 0;
@@ -186,7 +186,7 @@ body {
             transform: translateX(-50%);
     opacity: 1;
   }
-  75% {
+  90% {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     opacity: 1;
