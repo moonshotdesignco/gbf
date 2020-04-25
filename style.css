@@ -8,7 +8,7 @@
 html {
   width: 100%;
   height: 100%;
-  background: #33c573;
+  background: #ff4422;
 }
 
 html#ofh {
@@ -24,35 +24,43 @@ body {
   width: 100%;
 }
 
-.eip {
+.iip, .etr, .smim {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-animation: eip 10s linear infinite;
-          animation: eip 10s linear infinite;
+  -webkit-animation: pulse 2s ease-in-out infinite;
+          animation: pulse 2s ease-in-out infinite;
 }
 
-@-webkit-keyframes eip {
+@-webkit-keyframes pulse {
   0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
 
-@keyframes eip {
+@keyframes pulse {
   0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
 }
 
